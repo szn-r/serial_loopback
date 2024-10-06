@@ -10,6 +10,6 @@ Connect 2 USB-UART bridges that are connected to a 433MHz HC-12 transceiver each
 
 Note: 
 - You may have to preconfigure HC-12 according to datasheet by setting the Baud Rate.
-- Tera Term can be used.
+- Tera Term can be used. It can be downloaded from [here](https://teratermproject.github.io/index-en.html).
 
 Run the `test_read.py` and `test_write.py`.
