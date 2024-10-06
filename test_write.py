@@ -10,7 +10,7 @@ import time
 # This 433MHz transceiver is in-charge of sending signals out
 # Check using Device Manager which is the COM port
 ser = serial.Serial('COM8')
-ser.baudrate = 9600
+ser.baudrate = 9600 # Baud Rate configured in the HC-12, refer to datasheet to set
 ser.timeout = None
 
 # ser_bytes = ser.readline()
