@@ -9,12 +9,12 @@ import time
 # Connects to a 433MHz joined to a UART USB Bridge at COM8 (for example)
 # This 433MHz transceiver is in-charge of sending signals out
 # Check using Device Manager which is the COM port
-ser = serial.Serial('COM8')
+ser = serial.Serial('COM3')
 ser.baudrate = 9600 # Baud Rate configured in the HC-12, refer to datasheet to set
 ser.timeout = None
 
 # ser_bytes = ser.readline()
 # print(ser_bytes)
 while True:
-    ser.write(b'cmd\r\n')
+    ser.write(b'ping\n')
     time.sleep(1)
